@@ -44,24 +44,46 @@ foreach ($project in $all_demos.Keys) {
     Write-Host "`n🔥 Running $project demo..." -ForegroundColor Cyan
     
     if (Test-Path $project) {
-        Set-Location $project
-          # Activate venv and run script
-        if (Test-Path ".venv\Scripts\activate.ps1") {
-            & .venv\Scripts\activate.ps1
-            python $all_demos[$project]
-            deactivate
-        } else {
-            Write-Host "  ⚠️  Virtual environment not found. Run setup_all_projects.ps1 first!" -ForegroundColor Yellow
+        try {
+            Set-Location $project
+            
+            # Check if the Python script exists
+            $scriptName = $all_demos[$project]
+            if (-not (Test-Path $scriptName)) {
+                Write-Host "  ⚠️  Script $scriptName not found in $project" -ForegroundColor Yellow
+                Set-Location ..
+                continue
+            }
+            
+            # Check if virtual environment exists and use it
+            if (Test-Path ".venv\Scripts\python.exe") {
+                Write-Host "  Using virtual environment..." -ForegroundColor Gray
+                & .\.venv\Scripts\python.exe $scriptName
+            } elseif (Test-Path ".venv\bin\python") {
+                # For Unix/Linux systems
+                Write-Host "  Using virtual environment..." -ForegroundColor Gray
+                & ./.venv/bin/python $scriptName
+            } else {
+                Write-Host "  ⚠️  Virtual environment not found. Using system Python..." -ForegroundColor Yellow
+                Write-Host "  ⚠️  Run setup_all_projects.ps1 first for better results!" -ForegroundColor Yellow
+                python $scriptName
+            }
+            
+            Set-Location ..
+        } catch {
+            Write-Host "  ❌ Error running $project : $($_.Exception.Message)" -ForegroundColor Red
+            Set-Location ..
         }
-        
-        Set-Location ..
     } else {
         Write-Host "  ❌ Project $project not found!" -ForegroundColor Red
     }
     
-    Write-Host "  Press any key to continue to next demo..." -ForegroundColor Gray
+    Write-Host "`n  Press any key to continue to next demo..." -ForegroundColor Gray
     $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 }
 
 Write-Host "`n🎉 All demos completed!" -ForegroundColor Green
-Write-Host "For EDA projects, run: jupyter notebook in the respective directories" -ForegroundColor Yellow
+Write-Host "`nFor EDA projects, run:" -ForegroundColor Yellow
+Write-Host "  cd eda-portfolio-tihassfjord" -ForegroundColor Gray
+Write-Host "  .\.venv\Scripts\Activate.ps1" -ForegroundColor Gray
+Write-Host "  jupyter notebook" -ForegroundColor Gray
