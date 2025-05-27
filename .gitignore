@@ -1,0 +1,129 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Machine Learning
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.ckpt
+*.pth
+*.pt
+models/
+checkpoints/
+logs/
+tensorboard_logs/
+mlruns/
+wandb/
+
+# Data files (large datasets)
+*.csv
+*.json
+*.parquet
+*.xlsx
+*.xls
+data/raw/
+data/processed/
+*.zip
+*.tar.gz
+*.7z
+
+# Generated files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+plots/
+figures/
+outputs/
+results/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.out
+*.err
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Ray/Dask
+ray_results/
+dask-worker-space/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Keep important files
+!README.md
+!requirements.txt
+!*.py
+!*.md
+!*.yml
+!*.yaml
+!*.json
+!*.txt
+!setup_all_projects.ps1
+!run_demos.ps1
+!verify_setup.py
+
+# Keep sample/demo images (small ones)
+!sample_*.png
+!demo_*.jpg
+!*_sample.*
