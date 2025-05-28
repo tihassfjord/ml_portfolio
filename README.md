@@ -2,16 +2,16 @@
 
 **Author:** tihassfjord  
 **Portfolio:** Comprehensive ML Engineering & Research Projects  
-**Status:** 27 Complete Projects | Production-Ready | Interview-Ready
+**Status:** 27 Complete Projects | Production-Ready |
 
 ---
 
 ## 🎯 Portfolio Overview
 
-This repository showcases a comprehensive machine learning journey from foundational concepts to cutting-edge production systems. Each project demonstrates specific skills, technologies, and real-world applications.
+This repository showcases a machine learning journey from foundational concepts to a go at cutting-edge production systems. Each project demonstrates specific skills, implementations, and real-world applications.
 
 ### 📊 Portfolio Statistics
-- **Total Projects:** 27 (100% Complete)
+- **Total Projects:** 27 
 - **Beginner Projects:** 5 ✅ (Fundamentals & EDA)
 - **Intermediate Projects:** 5 ✅ (Advanced ML & Deep Learning)  
 - **Advanced Highlight Projects:** 12 ✅ (Research & Production Systems)
@@ -22,8 +22,8 @@ This repository showcases a comprehensive machine learning journey from foundati
 ## 🏆 Advanced Highlights (12 Flagship Projects)
 
 ### 🧠 **Mathematical Foundations**
-1. **[Neural Network from Scratch](./nn-from-scratch-tihassfjord/)** - Pure NumPy implementation without ML frameworks
-2. **[Character Language Model](./char-lm-tihassfjord/)** - Text generation using pure NumPy and custom attention
+1. **[Neural Network from Scratch](./nn-from-scratch-tihassfjord/)** - only NumPy implementation without ML frameworks
+2. **[Character Language Model](./char-lm-tihassfjord/)** - Text generation using only NumPy and custom attention
 
 ### 🚀 **Production Systems**
 3. **[MLOps Pipeline](./mlops-pipeline-tihassfjord/)** - FastAPI + MLflow + monitoring + automated retraining
@@ -67,7 +67,7 @@ This repository showcases a comprehensive machine learning journey from foundati
 
 ### **Core ML & Data Science**
 - **Languages:** Python, NumPy, Pandas, Scikit-learn
-- **Deep Learning:** TensorFlow/Keras, PyTorch, Neural Networks from Scratch
+- **Deep Learning:** PyTorch, Neural Networks from Scratch, TensorFlow (secondary)
 - **Visualization:** Matplotlib, Seaborn, Plotly
 
 ### **Advanced & Production**
@@ -83,10 +83,10 @@ This repository showcases a comprehensive machine learning journey from foundati
 
 ### Prerequisites
 ```bash
-# Install UV (fast Python package manager)
-pip install uv
+# Install Conda (recommended package manager)
+# Download from: https://docs.conda.io/en/latest/miniconda.html
 
-# Or use pip if UV not available
+# Or use existing conda/mamba installation
 ```
 
 ### Setup Any Project
@@ -100,9 +100,15 @@ cd ml-portfolio
 
 # Or setup individual project
 cd project-name-tihassfjord
-uv venv
-uv pip install -r requirements.txt
-.venv\Scripts\activate  # Windows
+
+# Create conda environment
+conda env create -f environment.yml
+conda activate ml-project
+
+# Or create from requirements.txt
+conda create -n ml-project python=3.9
+conda activate ml-project
+conda install --file requirements.txt
 
 # Run project
 python main_script.py
@@ -155,7 +161,7 @@ This portfolio demonstrates expertise across the **complete ML engineering spect
 - **Business Acumen:** Practical applications, performance monitoring, statistical analysis
 - **Innovation:** AutoML, generative AI, multi-framework integration
 
-**Perfect for:** ML Engineer roles, Data Scientist positions, Research opportunities, PhD applications
+**Useful for(hopefully):** ML Engineer roles, Data Scientist positions, Research opportunities, PhD applications
 
 ---
 
@@ -169,4 +175,4 @@ This portfolio demonstrates expertise across the **complete ML engineering spect
 
 **⭐ If this portfolio helped you, please star the repository!**
 
-*Showcasing the journey from ML fundamentals to production-ready AI systems.*
+*Showcasing the journey from ML fundamentals to production-ready AI systems. credit for the idea goes to YouTube channel Infinite Code*
