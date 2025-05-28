@@ -1,178 +1,258 @@
-# 🤖 Advanced Machine Learning Portfolio
+🤖 Advanced Machine Learning Portfolio
 
-**Author:** tihassfjord  
-**Portfolio:** Comprehensive ML Engineering & Research Projects  
-**Status:** 27 Complete Projects | Production-Ready |
+Author: tihassfjord
+Portfolio: ML Engineering & Research Projects
+Status: 27 Completed Projects | Production-Ready (as far as I can tell!)
 
----
-
-## 🎯 Portfolio Overview
-
-This repository showcases a machine learning journey from foundational concepts to a go at cutting-edge production systems. Each project demonstrates specific skills, implementations, and real-world applications.
-
-### 📊 Portfolio Statistics
-- **Total Projects:** 27 
-- **Beginner Projects:** 5 ✅ (Fundamentals & EDA)
-- **Intermediate Projects:** 5 ✅ (Advanced ML & Deep Learning)  
-- **Advanced Highlight Projects:** 12 ✅ (Research & Production Systems)
-- **EDA Notebooks:** 5 ✅ (Data Science Foundations)
 
 ---
 
-## 🏆 Advanced Highlights (12 Flagship Projects)
+🎯 Portfolio Overview
 
-### 🧠 **Mathematical Foundations**
-1. **[Neural Network from Scratch](./nn-from-scratch-tihassfjord/)** - only NumPy implementation without ML frameworks
-2. **[Character Language Model](./char-lm-tihassfjord/)** - Text generation using only NumPy and custom attention
+This repository is a collection of projects documenting my ongoing learning journey in machine learning—from the basics all the way to trying out production-like systems. My goal has been to explore, build, and understand each concept by working through practical problems. Each project represents something I wanted to learn (or needed to Google a million times), and where possible, I tried to make things work in the real world—not just in a notebook.
 
-### 🚀 **Production Systems**
-3. **[MLOps Pipeline](./mlops-pipeline-tihassfjord/)** - FastAPI + MLflow + monitoring + automated retraining
-4. **[Real-time Fraud Detection](./fraud-detection-tihassfjord/)** - Streaming ML with adaptive thresholds
-5. **[Distributed ML System](./distributed-ml-tihassfjord/)** - Ray + Dask + PyTorch DDP multi-framework comparison
+📊 Portfolio Statistics
 
-### 🎨 **Advanced AI**
-6. **[Image Generation (DCGAN)](./image-gen-tihassfjord/)** - Generative Adversarial Networks for MNIST
-7. **[Reinforcement Learning Game AI](./rl-game-ai-tihassfjord/)** - DQN agent mastering CartPole
-8. **[Real-time Face Recognition](./face-recognition-tihassfjord/)** - OpenCV + live webcam integration
+Total Projects: 27
 
-### 🔬 **Research & Automation**
-9. **[Custom AutoML System](./custom-automl-tihassfjord/)** - Complete AutoML framework with code generation
-10. **[Automated ML Pipeline](./automl-pipeline-tihassfjord/)** - End-to-end ML automation with intelligent preprocessing
-11. **[Multi-language NLP Pipeline](./multilingual-nlp-tihassfjord/)** - Advanced transformer-based text processing
-12. **[A/B Testing Framework](./ab-test-framework-tihassfjord/)** - Statistical testing toolkit for data science
+Beginner: 5 (Fundamentals & EDA)
+
+Intermediate: 5 (Core ML & Deep Learning)
+
+Advanced Highlights: 12 (Research, Engineering, & Automation)
+
+EDA Notebooks: 5 (Data Science Foundations)
+
+
 
 ---
 
-## 🚀 Intermediate Projects (Advanced ML)
+🏆 Advanced Highlights (12 Projects I’m Most Proud Of)
 
-- **[Advanced Linear Regression](./linear-regression-tihassfjord/)** - From-scratch gradient descent with mathematical foundations
-- **[Image Classification System](./image-classification-tihassfjord/)** - CNNs + MLPs with CIFAR-10
-- **[Sentiment Analysis Engine](./sentiment-analysis-tihassfjord/)** - LSTM + traditional ML comparison
-- **[Stock Price Predictor](./stock-price-predictor-tihassfjord/)** - Time series forecasting with technical indicators
-- **[Movie Recommendation System](./recommendation-system-tihassfjord/)** - Collaborative filtering + content-based hybrid
+🧠 Mathematical Foundations
+
+1. Neural Network from Scratch – Built using only NumPy, just to see if I could (spoiler: it’s way harder than the tutorials make it sound)
+
+
+2. Character Language Model – Text generation with custom attention, again without any frameworks
+
+
+
+🚀 Production Systems
+
+3. MLOps Pipeline – FastAPI + MLflow + monitoring + retraining (nothing like wrestling with Dockerfiles for humility)
+
+
+4. Real-time Fraud Detection – Tried to make streaming ML “just work”; got a new appreciation for production monitoring
+
+
+5. Distributed ML System – Ray, Dask, PyTorch DDP; still figuring out which one actually scales for my use cases
+
+
+
+🎨 Advanced AI
+
+6. Image Generation (DCGAN) – GANs for MNIST; because who doesn’t want to try GANs at least once?
+
+
+7. Reinforcement Learning Game AI – DQN agent on CartPole; learned a lot about debugging “it just falls over”
+
+
+8. Real-time Face Recognition – OpenCV with live webcam integration (learned more about lighting than I expected)
+
+
+
+🔬 Research & Automation
+
+9. Custom AutoML System – Built my own basic AutoML framework, mostly for the fun/challenge
+
+
+10. Automated ML Pipeline – End-to-end automation with “intelligent” preprocessing (my attempt, at least)
+
+
+11. Multi-language NLP Pipeline – Transformer-based text processing for multilingual data
+
+
+12. A/B Testing Framework – Toolkit for statistical testing in data science projects
+
+
+
 
 ---
 
-## 📊 Beginner Projects (Fundamentals)
+🚀 Intermediate Projects (Aka: Where I Spent Most of My Time Learning)
 
-- **[EDA Portfolio](./eda-portfolio-tihassfjord/)** - Comprehensive exploratory data analysis
-- **[Iris Classifier](./iris-flower-classifier-tihassfjord/)** - Classic ML classification
-- **[Titanic Survival Predictor](./titanic-survival-tihassfjord/)** - Feature engineering showcase
-- **[Housing Price Predictor](./housing-price-predictor-tihassfjord/)** - Regression analysis
-- **[Customer Churn Predictor](./customer-churn-tihassfjord/)** - Business-focused classification
+Advanced Linear Regression – From-scratch gradient descent
 
----
+Image Classification System – CNNs + MLPs on CIFAR-10
 
-## 🛠️ Technologies Mastered
+Sentiment Analysis Engine – Compared LSTM vs. traditional ML
 
-### **Core ML & Data Science**
-- **Languages:** Python, NumPy, Pandas, Scikit-learn
-- **Deep Learning:** PyTorch, Neural Networks from Scratch, TensorFlow (secondary)
-- **Visualization:** Matplotlib, Seaborn, Plotly
+Stock Price Predictor – Time series forecasting
 
-### **Advanced & Production**
-- **MLOps:** FastAPI, MLflow, Docker, Model Monitoring, CI/CD
-- **Distributed Computing:** Ray, Dask, PyTorch DDP, Parallel Processing
-- **Computer Vision:** OpenCV, CNNs, GANs, Real-time Processing
-- **NLP:** LSTM, Transformers, Multilingual Processing, Text Generation
-- **Specialized:** Reinforcement Learning, AutoML, A/B Testing, Time Series
+Movie Recommendation System – Hybrid collaborative + content-based filtering
+
+
 
 ---
 
-## 🚀 Quick Start
+📊 Beginner Projects (The Foundations)
 
-### Prerequisites
-```bash
-# Install Conda (recommended package manager)
-# Download from: https://docs.conda.io/en/latest/miniconda.html
+EDA Portfolio – Comprehensive exploratory data analysis
 
-# Or use existing conda/mamba installation
-```
+Iris Classifier – Classic ML starter project
 
-### Setup Any Project
-```bash
-# Clone repository
+Titanic Survival Predictor – Feature engineering on a classic dataset
+
+Housing Price Predictor – Regression analysis for housing data
+
+Customer Churn Predictor – Business-focused classification
+
+
+
+---
+
+🛠️ Technologies Used
+
+Core ML & Data Science
+
+Python, NumPy, Pandas, Scikit-learn
+
+Deep Learning: PyTorch, “from scratch” NNs, a bit of TensorFlow
+
+Visualization: Matplotlib, Seaborn, Plotly
+
+
+Advanced & Production
+
+MLOps: FastAPI, MLflow, Docker, Monitoring, CI/CD
+
+Distributed: Ray, Dask, PyTorch DDP
+
+CV: OpenCV, CNNs, GANs, Real-time streaming
+
+NLP: LSTM, Transformers, Multilingual processing
+
+Specialized: RL, AutoML, A/B Testing, Time Series
+
+
+
+---
+
+🚀 Quick Start
+
+Prerequisites
+
+# Install Conda (recommended)
+# See: https://docs.conda.io/en/latest/miniconda.html
+# Or use your existing Conda/Mamba install
+
+Setup
+
+# Clone repo
 git clone https://github.com/tihassfjord/ml-portfolio
 cd ml-portfolio
 
 # Setup all projects at once
 ./setup_all_projects.ps1
 
-# Or setup individual project
+# Or for an individual project
 cd project-name-tihassfjord
 
-# Create conda environment
+# Create env
 conda env create -f environment.yml
 conda activate ml-project
 
-# Or create from requirements.txt
+# Or:
 conda create -n ml-project python=3.9
 conda activate ml-project
 conda install --file requirements.txt
 
-# Run project
+# Run main script
 python main_script.py
-```
 
-### Run All Demos
-```bash
-# Demo all projects
+Run All Demos
+
+# Demo everything
 ./run_demos.ps1
 
 # Verify setup
 python verify_setup.py
-```
+
 
 ---
 
-## 🎯 Key Achievements Demonstrated
+🎯 Key Achievements (What I Learned/Attempted)
 
-### **Mathematical & Algorithmic Mastery**
-✅ Neural networks implemented from scratch (pure NumPy)  
-✅ Custom optimization algorithms (gradient descent, backpropagation)  
-✅ Advanced statistical methods (A/B testing, hypothesis testing)  
+Mathematical & Algorithmic
 
-### **Production Engineering Skills**
-✅ MLOps pipelines with monitoring and automated retraining  
-✅ Real-time systems with streaming data processing  
-✅ Distributed computing across multiple frameworks  
-✅ RESTful APIs with FastAPI for model serving  
+Neural nets from scratch (NumPy)
 
-### **Research & Innovation**
-✅ Custom AutoML system with intelligent automation  
-✅ Generative AI with GANs and language models  
-✅ Reinforcement learning with deep Q-networks  
-✅ Multi-framework performance benchmarking  
+Custom optimization (gradient descent, backprop)
 
-### **Business & Applied Skills**
-✅ End-to-end ML project lifecycle management  
-✅ Feature engineering and data preprocessing pipelines  
-✅ Model evaluation and performance monitoring  
-✅ Statistical analysis and experimental design  
+Advanced stats (A/B testing, hypothesis testing)
+
+
+Production Engineering
+
+Built basic MLOps pipelines w/ monitoring
+
+Set up real-time data processing
+
+Distributed computing experiments
+
+RESTful APIs for model serving
+
+
+Research & Innovation
+
+Built a basic AutoML system
+
+Generative AI (GANs, language models)
+
+Reinforcement learning with DQN
+
+Benchmarked performance across frameworks
+
+
+Business & Applied
+
+End-to-end ML project workflows
+
+Feature engineering and preprocessing
+
+Model evaluation, monitoring, experimentation
+
+Statistical analysis and design
+
+
 
 ---
 
-## 📈 Portfolio Impact
+📈 Portfolio Impact
 
-This portfolio demonstrates expertise across the **complete ML engineering spectrum**:
+I’ve tried to cover the full stack of machine learning: from core algorithms to working systems and a few production tricks.
+If this portfolio helps anyone else avoid the same mistakes I made, that’s a win.
+Maybe it’s also useful for ML engineer or research roles, or for showing what I’ve actually built if you’re curious.
 
-- **Research Skills:** Custom implementations, algorithm development, mathematical foundations
-- **Engineering Skills:** Production systems, MLOps, distributed computing, real-time processing  
-- **Business Acumen:** Practical applications, performance monitoring, statistical analysis
-- **Innovation:** AutoML, generative AI, multi-framework integration
-
-**Useful for(hopefully):** ML Engineer roles, Data Scientist positions, Research opportunities, PhD applications
 
 ---
 
-## 📞 Contact & Links
+📞 Contact & Links
 
-**GitHub:** [tihassfjord](https://github.com/tihassfjord)  
-**Portfolio:** [Complete ML Portfolio](https://github.com/tihassfjord/ml-portfolio)  
-**LinkedIn:** [Connect on LinkedIn](https://linkedin.com/in/tihassfjord)  
+GitHub: tihassfjord
+Portfolio: Complete ML Portfolio
+LinkedIn: Connect on LinkedIn
+
 
 ---
 
-**⭐ If this portfolio helped you, please star the repository!**
+⭐ If this portfolio helped you, please consider starring the repo!
 
-*Showcasing the journey from ML fundamentals to production-ready AI systems. credit for the idea goes to YouTube channel Infinite Code*
+Showcasing the journey from ML fundamentals to production-ready AI systems.
+Credit for the original portfolio idea goes to YouTube channel Infinite Code.
+
+
+---
+
+
